@@ -6,9 +6,11 @@ import { makeServer } from "../services/mirage";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
-if (process.env.NODE_ENV === "development") {
-  makeServer();
-}
+// if (process.env.NODE_ENV === "development") {
+//   makeServer();
+// }
+
+makeServer();
 
 const queryClient = new QueryClient();
 
